@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.texto-central{
+  margin-top: 25vh;
+}
+h2{
+  text-align: center;
+  padding: 10px;
+}
+h2, h3{
+  font-size: 32px;
+}
+h4{
+  font-size: 24px;
+}
+.navbar {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding: 20px 0;
+}
+.navbar-toggler, .navbar-brand, .nav-link{
+  color: #ffffff;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(88, 36, 182, 0.7);
+  z-index: 1;
+}
+#banner{
+  width: 100%;
+  height: auto;
+  background-image: url('./imagens/terra.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+}
+.conteiner, .conteiner-central{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner-central{
+  flex-direction: column;
+}
+img{
+  width: 150px;
+  height: 150px;
+  margin-top: 50%;
+}
+.visao img{
+  border-radius: 80px;
+}
+h2{
+  font-size: 28px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+  padding: 10px 35px;
+}
+.container{
+  position: relative;
+  z-index: 2;
+}
+div.conteudo-central{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#motivos, #contatos{
+  background-color: #fffcf2;
+}
+#servicos{
+  background-color: #add8e1;
+}
+div.galeria img{
+  max-width: 95%;
+  height: auto;
+}
+div.motivos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+div.motivos-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  opacity: .5;
+  background-size: 200% 100%;
+}
+div.motivos-card p{
+  color: #fff;
+  padding: 18px;
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+div.motivos-card p, .card-text p{
+  font-size: 24px;
+}
+div.motivos-card:hover{
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 70%;
+  background-image: url('./imagens/fundo.jpg');
+  background-position: -100% 0;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 3px 3px 50px #092ad3;
+  padding: 12px;
+  opacity: 1;
+  transform: translate(15px, -15px);
+  transition: .7s;
+}
+div.motivos-card:hover p{
+  display: inline-block;
+  transition: 1.5s;
+}
+div.par:hover{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.numeros{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  padding: 7px;
+  cursor: pointer;
+}
+.card{
+  transition: transform 0.2s;
+}
+.card:hover{
+  transform: translateY(-7px);
+}
+.icone{
+  width: 35px;
+  margin: 5px;
+}
+.whats{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}
+.whats img{
+  width: 50px;
+  height: 50px;
+}
+footer {
+  background-color: #5824b7;
+}
+footer p {
+  margin: 0;
+}
+@media (max-width: 376px){
+  div.motivos-card:hover{
+    display: flex;
+    flex-direction: column;
+  }
+  .numeros{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 576px){
+  #banner{
+    padding: 80px 0;
+  }
+  .navbar {
+    padding: 10px 0;
+  }
+  h2, h3{
+    font-size: 32px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  .motivos{
+    flex-direction: column;
+    align-items: center;
+  }
+  div.motivos-card p, .card-text p{
+    font-size: 18px;
+  }
+  .numeros{
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1024px){
+  .numeros{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 1440px){
+  div.motivos-card p, .card-text p{
+    font-size: 28px;
+  }
+  .numeros{
+    width: 350px;
+    height: 350px;
+  }
+}

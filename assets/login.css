@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./imagens/terra.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form{
+    color: #f0f8ff;
+    border: #f0f8ff solid 3px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 20px #f0f8ff;
+    background: rgba(88, 36, 182, 0.7);
+    width: 350px;
+}
+h1{
+    padding: 50px 0 25px 0;
+}
+.painel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 85%;
+    height: 50px;
+    border: none;
+    padding: 0 35px 0 5px;
+    background: transparent;
+    color: #f0f8ff;
+    font-size: 20px;
+}
+input:hover{
+    border: solid 3px #b005fa;
+    font-size: 16px;
+}
+button{
+    width: 85%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(67, 20, 100);
+    color: #f0f8ff;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px 20px 10px;
+    box-shadow: 1px 1px 3px #b005fa;
+
+}
+button:hover{
+    background-color: #6f2ea0;
+    box-shadow: 1px 1px 3px rgb(67, 20, 100);
+}
